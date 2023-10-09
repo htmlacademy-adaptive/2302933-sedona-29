@@ -35,6 +35,89 @@
   <section class="promo promo--extra wrapper">
     <img class="promo__image" src="#" alt="Sedona.">
   </section>
+  <section class="form-container">
+    <h2 class="form-container__title">Оставьте свой отзыв</h2>
+    <p class="form-container__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="form" action="#" method="post">
+      <fieldset class="form__group">
+        <legend class="form__group-title">Представьтесь:</legend>
+        <label class="form__field field">
+          <span class="field__description">ИМЯ*:</span>
+          <input class="field__input" type="text" name="user-name" placeholder="Пётр">
+        </label>
+        <label class="form__field field">
+          <span class="field__description">ФАМИЛИЯ*:</span>
+          <input class="field__input" type="text" name="user-name" placeholder="Пустота">
+        </label>
+        <label class="form__field field">
+          <span class="field__description">Отчество:</span>
+          <input class="field__input" type="text" name="user-name" placeholder="Викторович">
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__group-title">Контактная информация:</legend>
+        <label class="form__field field">
+          <span class="field__description">Контактный телефон*:</span>
+          <input class="field__input" type="tel" name="user-phone" placeholder="Введите телефон">
+        </label>
+        <label class="form__field field">
+          <span class="field__description">Электронная почта*:</span>
+          <input class="field__input" type="email" name="user-email" placeholder="Введите e-mail">
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__group-title">ВАше Общее впечатление:</legend>
+        <label class="form__field field">
+          <input class="visually-hidden" type="radio" name="feedback" value="more-positive">
+          <span class="field__mark field__mark--radio"></span>
+          <span class="field__description">Скорее положительное</span>
+        </label>
+        <label class="form__field field">
+          <input class="visually-hidden" type="radio" name="feedback" value="more-negative">
+          <span class="field__mark field__mark--radio"></span>
+          <span class="field__description">Скорее отрицательное</span>
+        </label>
+        <label class="form__field field">
+          <input class="visually-hidden" type="radio" name="feedback" value="difficult-to-answer">
+          <span class="field__mark field__mark--radio"></span>
+          <span class="field__description">Затрудняюсь ответить</span>
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__group-title">посещенные достопримечательности:</legend>
+        <label class="form__field field">
+          <input class="visually-hidden" type="checkbox" name="visited-places" value="Devil-bridge">
+          <span class="field__mark field__mark--checkbox"></span>
+          <span class="field__description">Мост Дьявола</span>
+        </label>
+        <label class="form__field field">
+          <input class="visually-hidden" type="checkbox" name="visited-places" value="Bell-mountain">
+          <span class="field__mark field__mark--checkbox"></span>
+          <span class="field__description">Гора-Колокол</span>
+        </label>
+        <label class="form__field field">
+          <input class="visually-hidden" type="checkbox" name="visited-places" value="Slide-park">
+          <span class="field__mark field__mark--checkbox"></span>
+          <span class="field__description">Слайд-парк</span>
+        </label>
+        <label class="form__field field">
+          <input class="visually-hidden" type="checkbox" name="visited-places" value="Red-cliffs">
+          <span class="field__mark field__mark--checkbox"></span>
+          <span class="field__description">Красные скалы</span>
+        </label>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__group-title">Опишите свои эмоции:</legend>
+        <label class="form__field field">
+          <textarea class="field__input field__input--textarea" name="user-experience" placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
+      </fieldset>
+      <div class="form__container">
+        <button class="form__button button button--main" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <span class="form__container-text">* — обязательные поля</span>
+      </div>
+    </form>
+  </section>
 </main>
 <footer class="page-footer">
   <span class="page-footer__text">#visitSEDONA</span>
