@@ -1,4 +1,5 @@
 // ПОДКЛЮЧЕНИЕ СТИЛЕЙ
 
-@use './fonts.scss';
-@use './variables.scss';
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./global.scss";
