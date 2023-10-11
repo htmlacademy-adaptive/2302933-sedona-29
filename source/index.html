@@ -1,12 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header__container wrapper">
+    <a class="page-header__logo" href="index.html" aria-label="Обновить страницу.">
+      <img class="page-header__logo-image" src="#" alt="Логотип Седоны.">
+    </a>
+    <nav class="page-header__navigation main-navigation">
+      <button class="main-navigation__toggle" type="button" aria-label="Открыть или закрыть меню."></button>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Форма Отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="">
+  <section class="promo promo--index wrapper">
+    <img class="promo__image" src="#" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks.">
+  </section>
+  <section class="advantages wrapper">
+    <div class="advantages__header">
+      <h1 class="advantages__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+    <div class="advantages__container">
+      <div class="advantages__card advantages-card advantages-card--has-image">
+        <div class="advantages-card__container">
+          <span class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</span>
+          <span class="advantages-card__number">— №1 —</span>
+          <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <img class="advantages-card__image" src="#" alt="Городская обстановка.">
+      </div>
+      <div class="advantages__card advantages-card advantages-card--has-icon">
+        <span class="advantages-card__title">Жилье</span>
+        <p class="advantages-card__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="advantages__card advantages-card advantages-card--has-icon">
+        <span class="advantages-card__title">ЕДА</span>
+        <p class="advantages-card__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+      </div>
+      <div class="advantages__card advantages-card advantages-card--has-icon">
+        <span class="advantages-card__title">СУВЕНИРЫ</span>
+        <p class="advantages-card__description">Не только китайского, но и местного производства!</p>
+      </div>
+      <div class="advantages__card advantages-card advantages-card--has-image">
+        <div class="advantages-card__container">
+          <span class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</span>
+          <span class="advantages-card__number">— №2 —</span>
+          <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <img class="advantages-card__image" src="#" alt="Городская обстановка.">
+      </div>
+      <div class="advantages__card advantages-card">
+        <span class="advantages-card__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</span>
+        <span class="advantages-card__number">— №3 —</span>
+        <p class="advantages-card__description">ВСЕ интересные места находятся очень близко</p>
+      </div>
+      <div class="advantages__card advantages-card">
+        <span class="advantages-card__title">КРАСИВАЯ ДОРОГА</span>
+        <span class="advantages-card__number">— №4 —</span>
+        <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+      </div>
+      <div class="advantages__card advantages-card">
+        <span class="advantages-card__title">МАЛО ТУРИСТОВ</span>
+        <span class="advantages-card__number">— №5 —</span>
+        <p class="advantages-card__description">Большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </div>
+  </section>
+  <section class="interest">
+    <h2 class="visually-hidden">Найдём вам отличную гостиницу.</h2>
+    <span class="interest__title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
+    <p class="interest__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <button class="interest__button button button--main" type="button">Найти Гостиницу</button>
+  </section>
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104778.79448612008!2d-111.81350706057995!3d34.8477504306153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1696611830295!5m2!1sru!2s" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</main>
+<footer class="page-footer">
+  <span class="page-footer__text">#visitSEDONA</span>
+  <ul class="page-footer__socials socials">
+    <li class="socials__item">
+      <a class="socials__link socials__link--vkontakte" href="#" aria-label="Перейти на нашу страницу во вконтакте."></a>
+    </li>
+    <li class="socials__item">
+      <a class="socials__link socials__link--telegram" href="#" aria-label="Перейти на нашу страницу в телеграм."></a>
+    </li>
+    <li class="socials__item">
+      <a class="socials__link socials__link--youtube" href="#" aria-label="Перейти на нашу страницу на ютубе."></a>
+    </li>
+  </ul>
+  <a class="page-footer__logo" href="#" aria-label="Перейти на страницу htmlacademy.">
+    <span class="page-footer__logo-text">Разработано</span>
+    <img class="page-footer__logo-image" src="#" alt="Логотип htmlacademy.">
+  </a>
+</footer>
+</body>
 </html>
