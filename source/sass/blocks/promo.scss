@@ -1,0 +1,20 @@
+//ПРОМО БЛОК
+
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/promo/triangle.svg"), url("../img/promo/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--index {
+    padding: 90px 0 85px;
+    background-position: bottom, center;
+  }
+
+  &--extra {
+    padding: 52px 0 67px;
+    background-position: bottom;
+  }
+}
