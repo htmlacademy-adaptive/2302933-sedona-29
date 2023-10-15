@@ -2,20 +2,22 @@
 
 .title {
   margin: 0;
+  color: $color-black;
+  font-weight: 700;
 
   &--index {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $color-black;
   }
 
   &--main {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $color-black;
+  }
+
+  &--extra {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
   }
 }
