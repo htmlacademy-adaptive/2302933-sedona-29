@@ -1,0 +1,28 @@
+//БЛОК ПРЕИМУЩЕСТВ
+
+.advantages {
+
+}
+
+.advantages__header {
+  padding: 32px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.advantages__description {
+  text-align: center;
+}
+
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 23px 18px 46px;
+}
