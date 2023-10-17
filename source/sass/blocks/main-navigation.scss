@@ -1,0 +1,29 @@
+//ОСНОВНАЯ НАВИГАЦИЯ
+
+.main-navigation__list {
+  @include reset-list();
+  display: none;
+  flex-direction: column;
+  background-color: $color-main;
+}
+
+.main-navigation__link {
+  display: block;
+  text-align: center;
+  padding: 17px 0 12px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.main-navigation__toggle {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: block;
+  width: 23px;
+  height: 22px;
+}

@@ -1,0 +1,18 @@
+//КНОПКА
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: $font-family-main;
+
+  &--main {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-main;
+  }
+}

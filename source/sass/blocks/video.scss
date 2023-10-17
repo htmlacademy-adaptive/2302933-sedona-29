@@ -1,0 +1,23 @@
+//БЛОК ВИДЕО
+
+.video {
+  padding: 17px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+  border-top: 1px solid $color-special-grey;
+}
+
+.video__container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+
+.video__description {
+  margin: 0;
+  text-align: center;
+}

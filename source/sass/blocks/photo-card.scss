@@ -1,0 +1,38 @@
+//ФОТО-КАРТОЧКА
+
+.photo-card {
+  padding: 24px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid $color-special-grey;
+}
+
+.photo-card__link {
+  margin-bottom: 15px;
+}
+
+.photo-card__image {
+  display: block;
+}
+
+.photo-card__title {
+  font-weight: 700;
+  color: $color-black;
+}
+
+.photo-card__author {
+  text-transform: none;
+  margin-bottom: 11px;
+}
+
+.photo-card__button {
+  padding: 5px 0 0 37px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  background-image: url("../img/icons/like.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}

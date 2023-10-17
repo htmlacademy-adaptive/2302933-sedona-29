@@ -1,0 +1,67 @@
+//КАРТОЧКА ПРЕИМУЩЕСТВ
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+
+  &--main {
+    gap: 16px;
+    padding: 24px 26px;
+    align-items: center;
+    background-color: $color-grey;
+  }
+
+  &--has-image {
+    color: $color-white;
+
+    .advantage-card__title {
+      color: $color-white;
+    }
+  }
+
+  &--has-icon {
+    padding: 8px 0 0 47px;
+    gap: 16px;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    &--house {
+      background-image: url("../img/icons/house.svg");
+    }
+
+    &--burger {
+      background-image: url("../img/icons/burger.svg");
+    }
+
+    &--gift {
+      background-image: url("../img/icons/gift.svg");
+    }
+  }
+}
+
+.advantage-card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-main;
+  gap: 16px;
+
+  &--main {
+    padding: 37px 18px;
+  }
+
+  &--decorative {
+    padding: 70px 18px 40px;
+    background-image: url("../img/advantages/triangle.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+.advantage-card__description {
+  margin: 0;
+
+  &--center {
+    text-align: center;
+  }
+}

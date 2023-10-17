@@ -1,0 +1,22 @@
+//БЛОК ИНТЕРЕСА
+
+.interest {
+  padding: 38px 18px 49px;
+  display: flex;
+  flex-direction: column;
+}
+
+.interest__title {
+  margin-bottom: 15px;
+}
+
+.interest__description {
+  margin: 0 0 32px 0;
+  text-align: center;
+  align-self: center;
+  max-width: 262px;
+}
+
+.interest__button {
+  flex-grow: 1;
+}

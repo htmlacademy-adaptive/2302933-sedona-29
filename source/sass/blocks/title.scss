@@ -1,0 +1,23 @@
+//СТИЛИ ДЛЯ ОБЩИХ ЗАГОЛОВКОВ
+
+.title {
+  margin: 0;
+  color: $color-black;
+  font-weight: 700;
+
+  &--index {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--main {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--extra {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
