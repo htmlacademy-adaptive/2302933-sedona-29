@@ -1,0 +1,36 @@
+//ПОЛЯ ВВОДА
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__input {
+  border: none;
+  background-color: $color-light-grey;
+  padding: 16px;
+  font-family: $font-family-main;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $color-black;
+
+  &--textarea {
+    resize: none;
+    height: 150px;
+  }
+}
+
+.field__description {
+  &--main {
+    padding-left: 16px;
+  }
+
+  &--extra {
+    color: $color-black;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
