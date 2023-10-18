@@ -5,10 +5,8 @@ html {
 }
 
 body {
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   font-family: $font-family-main;
   font-size: 14px;
   line-height: 21px;
