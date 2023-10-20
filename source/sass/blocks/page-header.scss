@@ -1,7 +1,22 @@
 //ШАПКА САЙТА
 
 .page-header {
+  position: relative;
+  min-height: 56px;
   padding: 0 18px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__logo-image {
+  display: block;
+  max-width: none;
 }

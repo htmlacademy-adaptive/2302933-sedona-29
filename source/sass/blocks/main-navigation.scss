@@ -2,9 +2,23 @@
 
 .main-navigation__list {
   @include reset-list();
-  display: none;
-  flex-direction: column;
-  background-color: $color-main;
+
+  &--is-closed {
+    display: none;
+  }
+
+  &--is-open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $color-main;
+  }
+}
+
+.main-navigation__item:not(:last-of-type) {
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.20);
 }
 
 .main-navigation__link {
@@ -23,7 +37,32 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 23px;
   height: 22px;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 22px;
+  }
+
+  &--default {
+    &::before {
+      mask: url("../img/icons/hamburger-menu.svg");
+      background-color: $color-main;
+    }
+  }
+
+  &--active {
+    position: relative;
+    z-index: 11;
+
+    &::before {
+      mask: url("../img/icons/cross.svg");
+      background-color: $color-white;
+    }
+  }
 }
