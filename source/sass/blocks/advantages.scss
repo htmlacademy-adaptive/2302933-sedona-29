@@ -1,21 +1,22 @@
 //БЛОК ПРЕИМУЩЕСТВ
 
-.advantages {
-
-}
-
 .advantages__header {
-  padding: 32px 18px 16px;
+  padding: 33px 18px 17px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 37px;
 }
 
-.advantages__description {
+.advantages__title {
   text-align: center;
 }
 
-.advantages__container {
+.advantages__description {
+  margin: 0;
+  text-align: center;
+}
+
+.advantages__cards {
   display: flex;
   flex-direction: column;
 }

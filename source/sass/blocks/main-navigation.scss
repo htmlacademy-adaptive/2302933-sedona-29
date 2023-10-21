@@ -18,7 +18,7 @@
 }
 
 .main-navigation__item:not(:last-of-type) {
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.20);
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
 }
 
 .main-navigation__link {
@@ -47,12 +47,21 @@
     content: "";
     width: 23px;
     height: 22px;
+    transition: background-color 0.3s ease;
   }
 
   &--default {
     &::before {
       mask: url("../img/icons/hamburger-menu.svg");
       background-color: $color-main;
+    }
+
+    &:hover::before {
+      background-color: rgba($color-main, 0.6);
+    }
+
+    &:active::before {
+      background-color: rgba($color-main, 0.3);
     }
   }
 
@@ -63,6 +72,14 @@
     &::before {
       mask: url("../img/icons/cross.svg");
       background-color: $color-white;
+    }
+
+    &:hover::before {
+      background-color: rgba($color-white, 0.6);
+    }
+
+    &:active::before {
+      background-color: rgba($color-white, 0.3);
     }
   }
 }
