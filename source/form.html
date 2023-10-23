@@ -43,74 +43,74 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__group">
           <legend class="form__group-title title title--index">Представьтесь:</legend>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <span class="field__description field__description--main">ИМЯ*:</span>
-            <input class="field__input" type="text" name="user-name" placeholder="Пётр">
+            <input class="field__input" type="text" name="user-name" value="Пётр">
           </label>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <span class="field__description field__description--main">ФАМИЛИЯ*:</span>
-            <input class="field__input" type="text" name="user-surname" placeholder="Пустота">
+            <input class="field__input" type="text" name="user-surname" value="Пустота">
           </label>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <span class="field__description field__description--main">Отчество:</span>
-            <input class="field__input" type="text" name="user-patronymic" placeholder="Викторович">
+            <input class="field__input" type="text" name="user-patronymic" value="Викторович">
           </label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-title title title--index">Контактная информация:</legend>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <span class="field__description field__description--main">Контактный телефон*:</span>
             <input class="field__input" type="tel" name="user-phone" placeholder="Введите телефон">
           </label>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <span class="field__description field__description--main">Электронная почта*:</span>
             <input class="field__input" type="email" name="user-email" placeholder="Введите e-mail">
           </label>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--buttons">
           <legend class="form__group-title title title--index">ВАше Общее впечатление:</legend>
-          <label class="form__field field">
-            <input class="visually-hidden" type="radio" name="feedback" value="more-positive">
+          <label class="form__field field field--buttons">
+            <input class="field__input--radio visually-hidden" type="radio" name="feedback" value="more-positive" checked>
             <span class="field__mark field__mark--radio"></span>
             <span class="field__description field__description--extra">Скорее положительное</span>
           </label>
-          <label class="form__field field">
-            <input class="visually-hidden" type="radio" name="feedback" value="more-negative">
+          <label class="form__field field field--buttons">
+            <input class="field__input--radio visually-hidden" type="radio" name="feedback" value="more-negative">
             <span class="field__mark field__mark--radio"></span>
             <span class="field__description field__description--extra">Скорее отрицательное</span>
           </label>
-          <label class="form__field field">
-            <input class="visually-hidden" type="radio" name="feedback" value="difficult-to-answer">
+          <label class="form__field field field--buttons">
+            <input class="field__input--radio visually-hidden" type="radio" name="feedback" value="difficult-to-answer">
             <span class="field__mark field__mark--radio"></span>
             <span class="field__description field__description--extra">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--buttons">
           <legend class="form__group-title title title--index">посещенные достопримечательности:</legend>
-          <label class="form__field field">
-            <input class="visually-hidden" type="checkbox" name="visited-places" value="Devil-bridge">
+          <label class="form__field field field--buttons">
+            <input class="field__input--checkbox visually-hidden" type="checkbox" name="visited-places" value="Devil-bridge" checked>
             <span class="field__mark field__mark--checkbox"></span>
             <span class="field__description field__description--extra">Мост Дьявола</span>
           </label>
-          <label class="form__field field">
-            <input class="visually-hidden" type="checkbox" name="visited-places" value="Bell-mountain">
+          <label class="form__field field field--buttons">
+            <input class="field__input--checkbox visually-hidden" type="checkbox" name="visited-places" value="Bell-mountain" checked>
             <span class="field__mark field__mark--checkbox"></span>
             <span class="field__description field__description--extra">Гора-Колокол</span>
           </label>
-          <label class="form__field field">
-            <input class="visually-hidden" type="checkbox" name="visited-places" value="Slide-park">
+          <label class="form__field field field--buttons">
+            <input class="field__input--checkbox visually-hidden" type="checkbox" name="visited-places" value="Slide-park" checked>
             <span class="field__mark field__mark--checkbox"></span>
             <span class="field__description field__description--extra">Слайд-парк</span>
           </label>
-          <label class="form__field field">
-            <input class="visually-hidden" type="checkbox" name="visited-places" value="Red-cliffs">
+          <label class="form__field field field--buttons">
+            <input class="field__input--checkbox visually-hidden" type="checkbox" name="visited-places" value="Red-cliffs">
             <span class="field__mark field__mark--checkbox"></span>
             <span class="field__description field__description--extra">Красные скалы</span>
           </label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-title title title--index">Опишите свои эмоции:</legend>
-          <label class="form__field field">
+          <label class="form__field field field--main">
             <textarea class="field__input field__input--textarea" name="user-experience" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
