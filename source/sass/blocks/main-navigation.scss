@@ -56,6 +56,9 @@
   transition: color 0.3s ease;
 
   @include tablet {
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
     width: 153px;
     color: $color-black;
 

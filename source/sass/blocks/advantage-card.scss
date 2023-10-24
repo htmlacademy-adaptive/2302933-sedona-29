@@ -23,6 +23,14 @@
       height: 1px;
       bottom: 1px;
       background-color: $color-dark-grey;
+
+      @include tablet {
+        content: none;
+      }
+    }
+
+    @include tablet {
+      padding: 41px 33px;
     }
   }
 
@@ -31,6 +39,17 @@
 
     .advantage-card__title {
       color: $color-white;
+    }
+
+    @include tablet {
+      grid-column: 1/-1;
+      flex-direction: row;
+    }
+  }
+
+  &--reverse {
+    @include tablet {
+      flex-direction: row-reverse;
     }
   }
 
@@ -51,6 +70,14 @@
     &--gift {
       background-image: url("../img/icons/gift.svg");
     }
+
+    @include tablet {
+      background-size: 80px 70px;
+      background-position: center top 60px;
+      padding: 158px 33px 60px;
+      text-align: center;
+      gap: 23px;
+    }
   }
 }
 
@@ -70,17 +97,41 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 35px;
+
+    @include tablet {
+      background-image: none;
+    }
+  }
+
+  @include tablet {
+    padding: 53px 33px 31px;
+    max-width: 256px;
+  }
+
+  @include desktop {
+    padding: 52px 50px 51px;
+    max-width: 400px;
   }
 }
 
 .advantage-card__title {
   &--main {
     margin-bottom: 10px;
+
+    @include tablet {
+      padding: 0 20px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
   }
 }
 
 .advantage-card__number {
   margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 22px;
+  }
 }
 
 .advantage-card__description {
@@ -88,6 +139,10 @@
 
   &--center {
     text-align: center;
+  }
+
+  &--has-padding {
+    padding: 0 10px;
   }
 }
 
