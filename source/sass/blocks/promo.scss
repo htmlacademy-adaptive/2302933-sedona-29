@@ -4,17 +4,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/promo/triangle.svg"), url("../img/promo/background-mobile.jpg");
+  background-image: url("../img/promo/triangle.svg"), url("../img/promo/background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 
   &--index {
     padding: 90px 0 85px;
-    background-position: bottom, center;
+    background-position: bottom, top;
+
+    @include tablet {
+      padding: 77px 0 91px;
+    }
   }
 
   &--extra {
     padding: 52px 0 67px;
     background-position: bottom;
+
+    @include tablet {
+      padding: 95px 0 117px;
+    }
+  }
+}
+
+.promo__image {
+  @include tablet {
+    width: 461px;
   }
 }
