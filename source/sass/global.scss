@@ -12,6 +12,10 @@ body {
   line-height: 21px;
   color: $color-text;
   text-transform: uppercase;
+
+  @include desktop {
+    background-color: $color-light-grey;
+  }
 }
 
 img {
