@@ -23,5 +23,9 @@
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
 }
