@@ -1,10 +1,21 @@
 //ОСНОВНАЯ НАВИГАЦИЯ
 
+.main-navigation {
+  @include tablet {
+    flex-grow: 1;
+  }
+}
+
 .main-navigation__list {
   @include reset-list();
 
   &--is-closed {
     display: none;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &--is-open {
@@ -17,8 +28,20 @@
   }
 }
 
-.main-navigation__item:not(:last-of-type) {
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+.main-navigation__item {
+  &:not(:last-of-type) {
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+
+    @include tablet {
+      box-shadow: none;
+    }
+  }
+
+  &:nth-of-type(4n - 2) {
+    @include tablet {
+      margin-right: auto;
+    }
+  }
 }
 
 .main-navigation__link {
@@ -30,6 +53,30 @@
   font-weight: 700;
   color: $color-white;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+
+  @include tablet {
+    width: 153px;
+    color: $color-black;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &:active {
+      color: rgba($color-black, 0.3);
+    }
+  }
+
+  @include desktop {
+    width: 240px;
+  }
+
+  &--current {
+    @include tablet {
+      color: $color-brown;
+    }
+  }
 }
 
 .main-navigation__toggle {
@@ -81,5 +128,9 @@
     &:active::before {
       background-color: rgba($color-white, 0.3);
     }
+  }
+
+  @include tablet {
+    display: none;
   }
 }
