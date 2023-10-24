@@ -13,4 +13,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease;
+
+  svg {
+    fill: $color-white;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $color-dark-main;
+  }
+
+  &:active {
+    background-color: $color-special-main;
+
+    svg {
+      fill: rgba($color-white, 0.3);
+    }
+  }
 }

@@ -13,6 +13,16 @@
   &--index {
     padding: 41px 82px 33px;
   }
+
+  @include tablet {
+    padding: 36px 60px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    padding: 36px 120px;
+  }
 }
 
 .page-footer__text {
@@ -27,4 +37,26 @@
   align-items: center;
   gap: 12px;
   color: $color-black;
+  transition: color 0.3s ease;
+
+  svg {
+    fill: $color-black;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    color: $color-main;
+
+    svg {
+      fill: $color-main;
+    }
+  }
+
+  &:active {
+    color: $color-additional-grey;
+
+    svg {
+      fill: $color-additional-grey;
+    }
+  }
 }
