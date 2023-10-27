@@ -17,6 +17,10 @@
   &--main {
     font-size: 18px;
     line-height: 26px;
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
 
   &--extra {

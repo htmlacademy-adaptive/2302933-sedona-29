@@ -1,29 +1,102 @@
 //ФОТО-КАРТОЧКА
 
 .photo-card {
-  padding: 25px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  padding: 25px 20px;
   border-top: 1px solid $color-special-grey;
+
+  &--decorative {
+    @include tablet {
+      grid-column: 1/-1;
+    }
+  }
+
+  @include tablet {
+    display: block;
+    padding: 0;
+    border: none;
+  }
 }
 
-.photo-card__link {
-  margin-bottom: 15px;
+.photo-card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include tablet {
+    gap: 0;
+  }
+
+  @include desktop {
+    position: relative;
+  }
 }
 
 .photo-card__image {
   display: block;
+
+  &--decorative {
+    @include tablet {
+      max-height: 400px;
+    }
+  }
+
+  &--main {
+    @include tablet {
+      max-height: 267px;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.photo-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px;
+    background-color: $color-special-grey;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-black, 0.3);
+  }
+}
+
+.photo-card__text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-card__title {
   font-weight: 700;
   color: $color-black;
+
+  @include desktop {
+    color: $color-white;
+  }
 }
 
 .photo-card__author {
   text-transform: none;
-  margin-bottom: 11px;
+
+  @include desktop {
+    color: $color-white;
+  }
 }
 
 .photo-card__button {
@@ -35,4 +108,8 @@
   background-image: url("../img/icons/like.svg");
   background-repeat: no-repeat;
   background-position: left top;
+
+  @include desktop {
+    color: $color-white;
+  }
 }
