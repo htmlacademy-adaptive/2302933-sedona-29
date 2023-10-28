@@ -122,7 +122,11 @@
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <a class="video__link" href="#" target="_blank" aria-label="Открыть видео.">
-        <img src="./img/catalog-photos/video-mobile.jpg" alt="Дорога в горах." width="280" height="177">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/video/video-desktop.jpg 1x, ./img/video/video-tablet@2x.jpg 2x" width="800" height="500">
+          <source media="(min-width: 768px)" srcset="./img/video/video-tablet.jpg 1x, ./img/video/video-tablet@2x.jpg 2x" width="648" height="500">
+          <img src="./img/video/video-mobile.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" alt="Дорога в горах." width="280" height="177">
+        </picture>
       </a>
     </section>
   </main>

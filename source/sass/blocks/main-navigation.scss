@@ -24,12 +24,11 @@
     right: 0;
     left: 0;
     z-index: 10;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 }
 
 .main-navigation__item {
-
   &:nth-of-type(4n - 2) {
     @include tablet {
       margin-right: auto;
