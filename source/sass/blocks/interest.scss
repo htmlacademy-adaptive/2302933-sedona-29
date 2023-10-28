@@ -1,20 +1,35 @@
 //БЛОК ИНТЕРЕСА
 
 .interest {
-  padding: 38px 18px 49px;
+  padding: 39px 18px 49px;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    padding: 60px 155px 55px;
+  }
+
+  @include desktop {
+    padding: 62px 371px 66px;
+  }
 }
 
 .interest__title {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 33px;
+  }
 }
 
 .interest__description {
   margin: 0 0 32px 0;
   text-align: center;
   align-self: center;
-  max-width: 262px;
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
 }
 
 .interest__button {

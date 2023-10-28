@@ -4,9 +4,20 @@
   padding: 17px 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 38px;
   border-top: 1px solid $color-special-grey;
+
+  @include tablet {
+    border: none;
+    padding: 58px 60px 40px;
+    gap: 89px;
+  }
+
+  @include desktop {
+    padding: 60px 200px 84px;
+    gap: 86px;
+  }
 }
 
 .video__container {
@@ -15,9 +26,38 @@
   flex-direction: column;
   align-items: center;
   gap: 27px;
+
+  @include tablet {
+    padding: 0 100px;
+    gap: 33px;
+  }
+
+  @include desktop {
+    padding: 0 170px;
+  }
 }
 
 .video__description {
   margin: 0;
   text-align: center;
+}
+
+.video__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 54px;
+    mask: url("../img/icons/play-button.svg");
+    background-color: rgba($color-white, 0.7);
+  }
+
+  @include tablet {
+    max-height: 500px;
+  }
 }

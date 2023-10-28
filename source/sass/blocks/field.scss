@@ -2,22 +2,45 @@
 
 .field {
   display: flex;
-  flex-direction: column;
+
+  &--main {
+    flex-direction: column;
+  }
+
+  &--buttons {
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 .field__input {
   border: none;
   background-color: $color-light-grey;
-  padding: 16px;
+  padding: 0 16px;
   font-family: $font-family-main;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $color-black;
+  min-height: 58px;
 
   &--textarea {
+    padding: 16px;
     resize: none;
-    height: 150px;
+    min-height: 150px;
+  }
+
+  &--radio:checked + .field__mark--radio::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-text;
+  }
+
+  &--checkbox:checked + .field__mark--checkbox {
+    background-image: url("../img/icons/tick.svg");
   }
 }
 
@@ -32,5 +55,24 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+  }
+}
+
+.field__mark {
+  width: 46px;
+  height: 46px;
+  background-color: $color-light-grey;
+
+  &--checkbox {
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
   }
 }

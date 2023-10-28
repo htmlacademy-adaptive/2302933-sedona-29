@@ -14,5 +14,21 @@
     text-align: center;
     color: $color-white;
     background-color: $color-main;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $color-dark-main;
+    }
+
+    &:active {
+      background-color: $color-special-main;
+      color: rgba($color-white, 0.3);
+    }
+
+    &:disabled {
+      color: $color-white;
+      background-color: $color-special-grey;
+      pointer-events: none;
+    }
   }
 }

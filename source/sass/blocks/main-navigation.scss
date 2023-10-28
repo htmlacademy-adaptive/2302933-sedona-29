@@ -1,10 +1,39 @@
 //ОСНОВНАЯ НАВИГАЦИЯ
 
+.main-navigation {
+  @include tablet {
+    flex-grow: 1;
+  }
+}
+
 .main-navigation__list {
   @include reset-list();
-  display: none;
-  flex-direction: column;
-  background-color: $color-main;
+
+  &--is-closed {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--is-open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+}
+
+.main-navigation__item {
+  &:nth-of-type(4n - 2) {
+    @include tablet {
+      margin-right: auto;
+    }
+  }
 }
 
 .main-navigation__link {
@@ -16,6 +45,47 @@
   font-weight: 700;
   color: $color-white;
   text-transform: uppercase;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $color-main;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+
+    &:hover {
+      background-color: $color-dark-main;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+      background-color: $color-special-main;
+    }
+  }
+
+  @include tablet {
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
+    width: 153px;
+    color: $color-black;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &:active {
+      color: rgba($color-black, 0.3);
+    }
+  }
+
+  @include desktop {
+    width: 240px;
+  }
+
+  &--current {
+    @include tablet {
+      color: $color-brown;
+    }
+  }
 }
 
 .main-navigation__toggle {
@@ -23,7 +93,53 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 23px;
   height: 22px;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 22px;
+    transition: background-color 0.3s ease;
+  }
+
+  &--default {
+    &::before {
+      mask: url("../img/icons/hamburger-menu.svg");
+      background-color: $color-main;
+    }
+
+    &:hover::before {
+      background-color: rgba($color-main, 0.6);
+    }
+
+    &:active::before {
+      background-color: rgba($color-main, 0.3);
+    }
+  }
+
+  &--active {
+    position: relative;
+    z-index: 11;
+
+    &::before {
+      mask: url("../img/icons/cross.svg");
+      background-color: $color-white;
+    }
+
+    &:hover::before {
+      background-color: rgba($color-white, 0.6);
+    }
+
+    &:active::before {
+      background-color: rgba($color-white, 0.3);
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
 }

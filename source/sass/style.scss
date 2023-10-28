@@ -1,13 +1,14 @@
 // ПОДКЛЮЧЕНИЕ СТИЛЕЙ
 
-@import "./fonts.scss";
 @import "./variables.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
 @import "./global.scss";
 @import "./visually-hidden.scss";
-@import "./mixins.scss";
+@import "./blocks/page-wrapper";
+@import "./blocks/page-main.scss";
 @import "./blocks/button.scss";
 @import "./blocks/page-header.scss";
-@import "./blocks/wrapper.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/title.scss";

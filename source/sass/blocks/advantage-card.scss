@@ -5,10 +5,33 @@
   flex-direction: column;
 
   &--main {
-    gap: 16px;
-    padding: 24px 26px;
+    position: relative;
+    gap: 1px;
+    padding: 24px 26px 26px;
     align-items: center;
     background-color: $color-grey;
+
+    &:last-of-type {
+      padding-bottom: 28px;
+    }
+
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      right: 18px;
+      left: 18px;
+      height: 1px;
+      bottom: 1px;
+      background-color: $color-dark-grey;
+
+      @include tablet {
+        content: none;
+      }
+    }
+
+    @include tablet {
+      padding: 41px 33px;
+    }
   }
 
   &--has-image {
@@ -16,6 +39,17 @@
 
     .advantage-card__title {
       color: $color-white;
+    }
+
+    @include tablet {
+      grid-column: 1/-1;
+      flex-direction: row;
+    }
+  }
+
+  &--reverse {
+    @include tablet {
+      flex-direction: row-reverse;
     }
   }
 
@@ -36,6 +70,14 @@
     &--gift {
       background-image: url("../img/icons/gift.svg");
     }
+
+    @include tablet {
+      background-size: 80px 70px;
+      background-position: center top 60px;
+      padding: 158px 33px 60px;
+      text-align: center;
+      gap: 23px;
+    }
   }
 }
 
@@ -44,10 +86,9 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-main;
-  gap: 16px;
 
   &--main {
-    padding: 37px 18px;
+    padding: 38px 18px;
   }
 
   &--decorative {
@@ -55,6 +96,41 @@
     background-image: url("../img/advantages/triangle.svg");
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 100% 35px;
+
+    @include tablet {
+      background-image: none;
+    }
+  }
+
+  @include tablet {
+    padding: 53px 33px 31px;
+    width: 33.33%;
+  }
+
+  @include desktop {
+    padding: 52px 50px 51px;
+    max-width: 400px;
+  }
+}
+
+.advantage-card__title {
+  &--main {
+    margin-bottom: 10px;
+
+    @include tablet {
+      padding: 0 20px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.advantage-card__number {
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 22px;
   }
 }
 
@@ -64,4 +140,15 @@
   &--center {
     text-align: center;
   }
+
+  &--has-padding {
+    padding: 0 10px;
+  }
+}
+
+.advantage-card__image {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
 }
